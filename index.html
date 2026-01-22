@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,6 +143,85 @@
             .sbiff-coverage h3 {
                 font-size: 1.3rem;
             }
+            
+            .photo-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .photo-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Wall of Fame Section */
+        .wall-of-fame {
+            background: white;
+            padding: 3rem 0;
+        }
+        
+        .wall-of-fame h2 {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .wall-of-fame h3 {
+            font-size: 1.3rem;
+            color: #2a5298;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: normal;
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .photo-item {
+            text-align: center;
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .photo-item img:hover {
+            transform: scale(1.05);
+        }
+        
+        .photo-item .name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1e3c72;
+            margin-top: 0.5rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .photo-item .title {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        footer p {
+            margin: 0.3rem 0;
         }
     </style>
 </head>
@@ -176,6 +254,243 @@
             </div>
         </div>
     </section>
+
+    <!-- Wall of Fame Section -->
+    <section class="wall-of-fame">
+        <div class="container">
+            <h2>SBARTSTV Wall of Fame</h2>
+            <h3>with Producer, Director and Main Host Clifford Baldridge</h3>
+            
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="1_jeffbridges.jpg" alt="Jeff Bridges">
+                    <p class="name">Jeff Bridges</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="2_jamescameron.jpg" alt="James Cameron">
+                    <p class="name">James Cameron</p>
+                    <p class="title">Director</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="3_robertzemeckis.jpg" alt="Robert Zemeckis">
+                    <p class="name">Robert Zemeckis</p>
+                    <p class="title">Director</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="4_sheriffbillbrown.jpg" alt="Sheriff Bill Brown">
+                    <p class="name">Bill Brown</p>
+                    <p class="title">Sheriff</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="5_sbpdchiefcamsanchez.jpg" alt="SBPD Chief Cam Sanchez">
+                    <p class="name">Cam Sanchez</p>
+                    <p class="title">SBPD Chief</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="6_sandrabullock.jpg" alt="Sandra Bullock">
+                    <p class="name">Sandra Bullock</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="7_kennylogins.jpg" alt="Kenny Loggins">
+                    <p class="name">Kenny Loggins</p>
+                    <p class="title">Musician</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="8_paulwalker.jpg" alt="Paul Walker">
+                    <p class="name">Paul Walker</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="9_ianparsons.jpg" alt="Alan Parsons">
+                    <p class="name">Alan Parsons</p>
+                    <p class="title">Musician</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="10_brendavacaro.jpg" alt="Brenda Vacaro">
+                    <p class="name">Brenda Vacaro</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="11_fessparker.jpg" alt="Fess Parker">
+                    <p class="name">Fess Parker</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="12_georgegaynescliff1.jpg" alt="George Gaynes">
+                    <p class="name">George Gaynes</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="13_edasner.jpg" alt="Ed Asner">
+                    <p class="name">Ed Asner</p>
+                    <p class="title">Actor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="14_deankamen.jpg" alt="Dean Kamen">
+                    <p class="name">Dean Kamen</p>
+                    <p class="title">Inventor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="15_jimmyconnors.jpg" alt="Jimmy Connors">
+                    <p class="name">Jimmy Connors</p>
+                    <p class="title">Tennis Champion</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="16_jackcanfield.jpg" alt="Jack Canfield">
+                    <p class="name">Jack Canfield</p>
+                    <p class="title">Author</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="17_drlaura.jpg" alt="Dr. Laura">
+                    <p class="name">Dr. Laura</p>
+                    <p class="title">Radio Host</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="18_ladynileytree.jpg" alt="Lady Ridley Tree">
+                    <p class="name">Lady Ridley Tree</p>
+                    <p class="title">Philanthropist</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="19_brooksfiirestone.jpg" alt="Brooks Firestone">
+                    <p class="name">Brooks Firestone</p>
+                    <p class="title">Businessman and Politician</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="20_Ambassador_Holden.jpg" alt="Ambassador Holden">
+                    <p class="name">Ambassador Holden</p>
+                    <p class="title">Ambassador</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="21_maryellentiffany.jpg" alt="Mary Ellen Tiffany">
+                    <p class="name">Mary Ellen Tiffany</p>
+                    <p class="title">Banker, Montecito Bank and Trust</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="22_gloriamontanoclarkrichardshull.jpg" alt="Gloria Montano Clark and Richard Ahull">
+                    <p class="name">Gloria Montano Clark & Richard Ahull</p>
+                    <p class="title">Montecito Philanthropist & Founder Video Endoscope</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="23_larrycrandell.jpg" alt="Larry Crandell">
+                    <p class="name">Larry Crandell "Mr. Santa Barbara"</p>
+                    <p class="title">Philanthropist</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="24_sbnavyleagueconnielos.jpg" alt="SB Navy League Connie Los">
+                    <p class="name">Connie Los</p>
+                    <p class="title">SB Navy League</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="25_ussronaldreagan.jpg" alt="USS Ronald Reagan Captain">
+                    <p class="name">USS Ronald Reagan Captain</p>
+                    <p class="title">Nuclear Aircraft Carrier</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="26_mconnelicecream.jpg" alt="Jim McCoy">
+                    <p class="name">Jim McCoy</p>
+                    <p class="title">McConnell's Ice Cream</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="27_lindalaurie.jpg" alt="Linda Laurie">
+                    <p class="name">Linda Laurie</p>
+                    <p class="title">Musician</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="28_pauldargan.jpg" alt="Paul Dargan">
+                    <p class="name">Paul Dargan</p>
+                    <p class="title">Owner Dargan's Irish Pub</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="29_ninaterzian.jpg" alt="Nina Terzian">
+                    <p class="name">Nina Terzian</p>
+                    <p class="title">Montecito Philanthropist</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="30_stedmangraham.jpg" alt="Stedman Graham">
+                    <p class="name">Stedman Graham</p>
+                    <p class="title">Author & Entrepreneur</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="31_loiscapps.jpg" alt="Lois Capps">
+                    <p class="name">Lois Capps</p>
+                    <p class="title">U.S. Representative</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="32_paulorfela.jpg" alt="Paul Orfela">
+                    <p class="name">Paul Orfalea</p>
+                    <p class="title">Kinko's Founder</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="33_johnpalminteri.jpg" alt="John Palminteri">
+                    <p class="name">John Palminteri</p>
+                    <p class="title">KEYT News Anchor</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="34_michaeltowbes.jpg" alt="Michael Towbes">
+                    <p class="name">Michael Towbes</p>
+                    <p class="title">Montecito Bank and Trust CEO</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="35_martyblummayor.jpg" alt="Marty Blum">
+                    <p class="name">Marty Blum</p>
+                    <p class="title">Mayor of Santa Barbara</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="36_magiccastlemitarlinelarsen.jpg" alt="Milt and Arlene Larsen">
+                    <p class="name">Milt and Arlene Larsen</p>
+                    <p class="title">Magic Castle & Magic Castle Cabaret SB Founders</p>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="10_algore.jpg" alt="Al Gore">
+                    <p class="name">Al Gore</p>
+                    <p class="title">Former Vice President</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Santa Barbara Arts TV News | SBARTSTV.com</p>
+    </footer>
 
 </body>
 </html>

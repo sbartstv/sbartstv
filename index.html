@@ -286,6 +286,25 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Latest media and credentials */
+        .latest-media { margin-top: 2.5rem; text-align: left; }
+        .latest-media > h2 { text-align: center; }
+        .event-grid, .credential-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+        .event-card { background: #f5f5f5; padding: 1.5rem; border-radius: 8px; }
+        .latest-media h3 { color: #2a5298; font-size: 1.4rem; margin-bottom: 1rem; }
+        .latest-media p { font-size: 1.05rem; line-height: 1.7; margin: 0 0 1rem; max-width: none; }
+        .latest-media a { color: #1e3c72; }
+        .latest-media .event-date { font-weight: bold; color: #2a5298; }
+        .event-poster { display: block; width: 100%; max-height: 320px; object-fit: contain; margin-bottom: 1rem; }
+        .media-note { margin-top: 2rem; }
+        .media-note h3:not(:first-child) { margin-top: 1.5rem; }
+        .press-credential { text-align: center; margin: 2.5rem 0 2rem; }
+        .press-credential img { width: 100%; max-width: 420px; height: auto; border-radius: 8px; }
+        .credential-grid figure { margin: 0; text-align: center; }
+        .credential-grid img { width: 100%; height: 320px; object-fit: contain; background: #f5f5f5; border-radius: 8px; }
+        .credential-grid figcaption { color: #2a5298; font-weight: bold; line-height: 1.5; padding-top: 0.75rem; }
+        @media (max-width: 768px) { .event-grid, .credential-grid { grid-template-columns: 1fr; } .credential-grid img { height: auto; max-height: 420px; } }
     </style>
 </head>
 <body>
@@ -299,6 +318,46 @@
             <h1>Welcome to Santa Barbara Arts TV News</h1>
             <h2>SBArtsTV.com</h2>
             <p>Credentialed media in Santa Barbara County for over 20 years, covering all aspects of news and media.</p>
+            <div class="latest-media">
+                <h2>Latest Media &amp; Entertainment Events</h2>
+                <div class="event-grid">
+                    <article class="event-card">
+                        <h3>Media for the Malibu Film Festival</h3>
+                        <p class="event-date">November 15, 2026 · Beverly Hills</p>
+                        <p>Santa Barbara Arts TV will be covering the 27th Annual Malibu Film Festival at the Writers Guild Theater, 135 S. Doheny Drive, Beverly Hills. The day features independent films, filmmaker conversations, red carpet arrivals, an awards ceremony and reception.</p>
+                        <p><a href="https://www.malibufilmfestival.com/" target="_blank" rel="noopener">Festival details &amp; schedule</a></p>
+                    </article>
+                    <article class="event-card">
+                        <h3>Los Angeles Investor Conference — Marketing Partner</h3>
+                        <p class="event-date">November 19, 2026 · Blankspaces Venice</p>
+                        <img class="event-poster" src="https://raw.githubusercontent.com/sbartstv/cliffbaldridge.com/main/ytpics/860300347_28833085686356738_6225113086718391051_n.jpg" alt="Los Angeles Investor Conference marketing partner Clifford Baldridge, Santa Barbara Arts TV and AI Quantum Cypher" loading="lazy">
+                        <p>Marketing Partner Clifford Baldridge will represent Santa Barbara Arts TV and AI Quantum Cypher before 400 investors and founders.</p>
+                        <p>The conference brings investors and entrepreneurs together around AI, CPG, creators, entertainment, longevity, sports and technology. Attend at 606 Venice Blvd., Venice, or join the speaker program on Zoom.</p>
+                        <p>Networking begins at 2 p.m.; speakers run from 3–7 p.m., followed by The Funding Stage startup pitch competition from 7–9 p.m. Pacific. Produced by BRAND POPUP, Marketing Completion Fund and EventPlus.ai.</p>
+                        <p><a href="https://luma.com/drttidmq" target="_blank" rel="noopener">Full event information &amp; registration on Luma</a></p>
+                    </article>
+                </div>
+                <div class="media-note">
+                    <h3>Invited Media — CES 2027, Las Vegas</h3>
+                    <p>With 20 years of invited media experience at CES, Santa Barbara Arts TV is preparing for the Consumer Electronics Show 2027 in Las Vegas.</p>
+                    <h3>2026 Media Coverage</h3>
+                    <p>This year, Santa Barbara Arts TV participated as invited media at Augmented World Expo (AWE) and SIGGRAPH Los Angeles.</p>
+                </div>
+                <div class="press-credential">
+                    <h3>Press Credential — Los Angeles Press Club Press Card</h3>
+                    <img src="https://raw.githubusercontent.com/sbartstv/cliffbaldridge.com/main/ytpics/850583649_28864782096520430_6211515195883899667_n.jpg" alt="Los Angeles Press Club press card for Cliff Baldridge" loading="lazy">
+                </div>
+                <div class="credential-grid">
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/sbartstv/cliffbaldridge.com/main/ytpics/802642152_28234560432875936_4877944752965070631_n.jpg" alt="2026 Emmys Red Carpet Event — Emerging Media Peer Group" loading="lazy">
+                        <figcaption>2026 Emmys Red Carpet Event · Emerging Media Peer Group</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/sbartstv/cliffbaldridge.com/main/ytpics/40414414_1861402060618466_9113188576476004352_n.jpg" alt="Cliff Baldridge — Television Academy Member, Emerging Media Peer Group" loading="lazy">
+                        <figcaption>Television Academy Member · Emerging Media Peer Group</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
 
